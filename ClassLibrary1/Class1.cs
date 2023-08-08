@@ -102,6 +102,23 @@
         tax = t;
     }
 
+    public void CalculateTax(double cost, double percentage = 4.5)
+    {
+        //create local variable
+        double t;
+
+        //calculate tax
+        if (this.cost <= 50000)
+        {
+            t = cost * 5 / 100;
+        }
+        else
+        {
+            t = cost * percentage / 100;
+        }
+        tax = t;
+    }
+
     //static method:Set method of TotalNoOfProducts
     public static void SetTotalNoOfProducts(int value)
     {
