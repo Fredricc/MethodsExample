@@ -31,8 +31,8 @@
         product3.SetQuantityInStock(800);
 
         //call methods
-        product1.CalculateTax();
-        product2.CalculateTax();
+        product1.CalculateTax(9.2);
+        product2.CalculateTax(7.4);
         product3.CalculateTax();
 
         //get values from fields
@@ -63,7 +63,7 @@
         System.Console.WriteLine("Tax: " + product3.GetTax());
 
         //total Quantity
-        int totalQuantity = Product.GetTotalNoOfProducts(product1, product2, product3);
+        int totalQuantity = Product.GetTotalQuantity(product1, product2, product3);
 
         //display totals
         System.Console.WriteLine("Total Quantity: " + totalQuantity);
