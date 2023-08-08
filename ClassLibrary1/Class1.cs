@@ -101,5 +101,26 @@
         }
         tax = t;
     }
+
+    //static method:Set method of TotalNoOfProducts
+    public static void SetTotalNoOfProducts(int value)
+    {
+        TotalNoProducts = value;
+    }
+
+    //static methods : Get method of TotalNoOfProducts
+    public static int GetTotalNoOfProducts()
+    {
+        return TotalNoProducts;
+    }
+
+    //static method: Calculates Total Quantity
+    public static int GetTotalQuantity(Product product1, Product product2, Product product3)
+    {
+        int total;
+        total = product1.GetQuantityInStock() + product2.GetQuantityInStock() + product3.GetQuantityInStock();
+        return total;
+    }
+
 }
 
