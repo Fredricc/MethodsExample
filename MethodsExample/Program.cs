@@ -33,7 +33,7 @@
         //call methods
         product1.CalculateTax(percentage: 9.2);
         product2.CalculateTax(percentage: 7.4);
-        product3.CalculateTax();
+        product3.CalculateTax(10000, 3.4);
 
         //get values from fields
         System.Console.WriteLine(developerName);
